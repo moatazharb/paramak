@@ -16,15 +16,9 @@ RUN apt-get update -y && \
 USER $NB_UID
 
 RUN conda install --yes \
-      -c pythonocc \
-      -c oce \
-      -c cadquery ocp \
-      -c dlr-sc \
       -c conda-forge \
+      -c cadquery ocp \
       -c cadquery \
-      -c defaults \
-      oce=0.18.3 \
-      pythonocc-core=0.18.2 \
     && fix-permissions $CONDA_DIR \
     && fix-permissions /home/$NB_USER
 
