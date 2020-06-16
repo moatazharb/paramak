@@ -27,9 +27,9 @@ RUN pip install \
       git+https://github.com/CadQuery/cadquery.git \
       pythreejs==2.1.1
 
-# RUN git clone https://github.com/bernhard-42/jupyter-cadquery.git \
-#     && pip install ./jupyter-cadquery \
-#     && jupyter-labextension install ./jupyter-cadquery/js
+RUN git clone https://github.com/bernhard-42/jupyter-cadquery.git \
+    && pip install ./jupyter-cadquery \
+    && jupyter-labextension install ./jupyter-cadquery/js
 
 # Make sure the contents of our repo are in ${HOME}
 RUN git clone --branch binder https://github.com/ukaea/paramak paramak2
