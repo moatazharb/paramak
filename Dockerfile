@@ -40,6 +40,7 @@ RUN apt-get install -y freeglut3-dev
 RUN pip uninstall pyglet 
 # this installs version 1.48 which works in docker
 RUN pip install pyglet
+RUN apt-get install git
 
 RUN git clone https://github.com/ukaea/paramak
 
