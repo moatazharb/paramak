@@ -13,3 +13,4 @@ dependencies:
   - uncertainties
   - importlib_resources
   - cadquery
+  - ocp
