@@ -1,0 +1,14 @@
+name: paramak-environment
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - plotly
+  - tqdm
+  - matplotlib
+  - trimesh
+  - pandas
+  - pyrender
+  - uncertainties
+  - importlib_resources
+  - cadquery
