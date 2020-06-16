@@ -2,6 +2,7 @@ name: paramak-environment
 channels:
   - conda-forge
 dependencies:
+  - git
   - numpy
   - plotly
   - tqdm
