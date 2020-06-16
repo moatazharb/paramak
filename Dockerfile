@@ -37,6 +37,8 @@ RUN pip install \
 #     && jupyter-labextension install ./jupyter-cadquery/js
 
 # Make sure the contents of our repo are in ${HOME}
+RUN cd paramak && pip install .
+
 COPY . ${HOME}
 
 
