@@ -23,8 +23,9 @@ RUN conda install --quiet --yes -c conda-forge -c cadquery cadquery=2
 # RUN conda install  pyrender
 # RUN conda install  uncertainties
 # RUN conda install  importlib_resources
+RUN conda install  git
 
 
-# RUN git clone --branch binder https://github.com/ukaea/paramak
+RUN git clone --branch binder https://github.com/ukaea/paramak
 
 # WORKDIR paramak
