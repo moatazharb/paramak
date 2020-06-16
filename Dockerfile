@@ -42,6 +42,7 @@ RUN pip uninstall pyglet
 RUN pip install pyglet
 RUN apt-get install git
 
-RUN git clone https://github.com/ukaea/paramak
+RUN git clone --branch binder https://github.com/ukaea/paramak
+RUN git checkout develop
 
 WORKDIR paramak
