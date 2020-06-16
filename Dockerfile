@@ -28,4 +28,6 @@ RUN conda install  git
 
 RUN git clone --branch binder https://github.com/ukaea/paramak
 
+RUN conda install -c conda-forge notebook
+
 # WORKDIR paramak
