@@ -18,6 +18,7 @@ USER $NB_UID
 RUN conda install --yes \
       -c pythonocc \
       -c oce \
+      -c ocp \
       -c dlr-sc \
       -c conda-forge \
       -c cadquery \
