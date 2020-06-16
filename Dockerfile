@@ -37,12 +37,12 @@ RUN pip install \
 #     && jupyter-labextension install ./jupyter-cadquery/js
 
 # Make sure the contents of our repo are in ${HOME}
-RUN cd paramak && python setup.py install
+RUN git clone --branch binder https://github.com/ukaea/paramak paramak2
+RUN cd paramak2 && python setup.py install
 
 COPY . ${HOME}
 
 
-# RUN git clone --branch binder https://github.com/ukaea/paramak
 
 # RUN conda install -c conda-forge notebook
 
