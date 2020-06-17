@@ -9,8 +9,8 @@ dependencies:
   - matplotlib
   - trimesh
   - pandas
-  # - pyrender
   - uncertainties
   - importlib_resources
   - cadquery
   - ocp
+  # - pyrender
